@@ -14,3 +14,7 @@ target/
 .sonar/
 .settings/
 .classpath
+.project
+.springBeans
+*.abc
+
