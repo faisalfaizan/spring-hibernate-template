@@ -1,0 +1,16 @@
+#Can ignore specific files
+.DS_Store
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.jar
+*.zip
+*.gz
+*.log
+*.sql
+target/
+.sonar/
+.settings/
+.classpath
