@@ -4,7 +4,7 @@ import java.util.Properties;
 
 import javax.sql.DataSource;
 
-import org.hibernate.dialect.HSQLDialect;
+import org.hibernate.dialect.H2Dialect;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,8 +23,7 @@ public class HibernateConfiguration {
 	@Bean
 	public AnnotationSessionFactoryBean sessionFactoryBean() {
 		Properties props = new Properties();
-		//props.put("hibernate.dialect", H2Dialect.class.getName());
-		props.put("hibernate.dialect", HSQLDialect.class.getName());
+		props.put("hibernate.dialect", H2Dialect.class.getName());
 		props.put("hibernate.format_sql", "true");
 
 		AnnotationSessionFactoryBean bean = new AnnotationSessionFactoryBean();

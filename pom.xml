@@ -73,10 +73,25 @@
 			<artifactId>hsqldb</artifactId>
 			<version>1.8.0.10</version>
 		</dependency>
+		
 	</dependencies>
 
 	<build>
-		<plugins>
+	<plugins>
+	<plugin>
+	<groupId>org.jacoco</groupId>
+	<artifactId>jacoco-maven-plugin</artifactId>
+	<version>0.5.7.201204190339</version>
+	<executions>
+	        <execution>
+	                <id>report</id>
+		        <phase>prepare-package</phase>
+		        <goals>
+			       <goal>report</goal>
+		        </goals>
+	       </execution>
+	</executions>
+</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -88,7 +103,7 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	
 	<repositories>
 		<repository>
 			<id>org.jboss.repository.releases</id>
@@ -101,4 +116,5 @@
 
 	</repositories>
 
+	
 </project>

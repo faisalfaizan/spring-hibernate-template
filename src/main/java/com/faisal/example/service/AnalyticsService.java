@@ -6,6 +6,6 @@ import com.faisal.example.domain.Analytics;
 
 public interface AnalyticsService {
 
-	public void saveAnalytics(List<Analytics> analytics);
-	public void updateAnalytics(List<Analytics> analytics);
+	void saveAnalytics(List<Analytics> analytics);
+	void updateAnalytics(List<Analytics> analytics);
 }

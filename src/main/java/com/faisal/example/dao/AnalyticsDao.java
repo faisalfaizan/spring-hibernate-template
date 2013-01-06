@@ -6,6 +6,6 @@ import com.faisal.example.domain.Analytics;
 
 public interface AnalyticsDao {
 
-	public void save(List<Analytics> analytics);
-	public void update(List<Analytics> analytics);
+	void save(List<Analytics> analytics);
+	void update(List<Analytics> analytics);
 }

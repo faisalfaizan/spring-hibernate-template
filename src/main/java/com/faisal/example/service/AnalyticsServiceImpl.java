@@ -15,9 +15,6 @@ public class AnalyticsServiceImpl implements AnalyticsService{
 	private AnalyticsDao analyticsDao;
 
 	public void saveAnalytics(List<Analytics> analytics) {
-		if(analyticsDao == null && analyticsDao.equals(""))
-			System.out.println("What a bug");
-		
 		analyticsDao.save(analytics);
 	}
 
